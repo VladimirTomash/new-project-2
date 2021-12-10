@@ -1,0 +1,45 @@
+<!doctype html>
+<html dir="ltr" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Новая вкладка</title>
+    <style>
+      body {
+        background: #FFFFFF;
+        margin: 0;
+      }
+
+      #backgroundImage {
+        border: none;
+        height: 100%;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+      }
+
+      [show-background-image] #backgroundImage {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Смарт-Экспресс. Официальный сайт</h1>
+    <header>
+      <nav>
+        <a href="#contacts">контакты</a>
+      </nav>
+      <div>
+        Наш e-mail <a href="mail to:mail@mail.ru">LBum@mail.ru</a>
+        Еще e-mail <a href="mail to:LBum@Rambler.ru">LBum@Rambler.ru</a>
+      </div>
+
+    </header>
+    <iframe id="backgroundImage" src=""></iframe>
+    <ntp-app></ntp-app>
+    <script type="module" src="new_tab_page.js"></script>
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+    <link rel="stylesheet" href="shared_vars.css">
+  </body>
+</html>
